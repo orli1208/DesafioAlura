@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesafioAlura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <main class="presentacion">
+        <img class="logoAlura" src="assets/Logo.png" alt="Logo Alura">
+        <section class="presentacionContenido">
+
+            <textarea class="textoIngresado" id="inputText" placeholder="Ingresa tu texto aquí"></textarea> 
+            <p>Solo letras minúsculas y sin acentos</p>
+            <div id="mensajeError"></div>
+
+            <div class="presentacionEnlaces">
+                <div class="botonEncripDesencrip">
+                    <button class="diseñoBotones1" id="encriptarBtn" onclick="ocultarSiHayTexto()">Encriptar</button>
+                    <button class="diseñoBotones2" id="desencriptarBtn" onclick="ocultarSiHayTexto()">Desencriptar</button>
+                </div>  
+            </div>
+        </section>
+
+        <div class="resultado">
+            <textarea class="textareaDesencrip" id="outputText" readonly></textarea>
+            <img class="logoMuñeco" id="imagen" src="assets/Muñeco.png" alt="Logo Muñeco">
+            <h2 id="mensaje">Ningún mensaje fue encontrado</h2>
+            <p id="instrucciones">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button class="botonCopiar" id="copiarBtn" >Copiar</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Orlando</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
