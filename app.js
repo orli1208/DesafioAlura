@@ -59,11 +59,11 @@ document.getElementById('inputText').addEventListener('input', function() {
     const textarea = this;
     const mensajeError = document.getElementById('mensajeError');
     
-    const regex = /^[a-z]*$/;
+    const regex = /^[a-z\s]*$/;
 
     if (!regex.test(textarea.value)) {
         mensajeError.textContent = "Por favor, ingresa solo letras minúsculas sin acentos.";
-        textarea.value = textarea.value.replace(/[^a-z]/g, '');
+        textarea.value = textarea.value.replace(/[^a-z\s]/g, '');
     } else {
         mensajeError.textContent = "";
     }
