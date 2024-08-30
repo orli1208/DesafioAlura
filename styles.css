@@ -173,12 +173,60 @@ h2, p{
         width: auto;
     }
 
+    .resultado {
+        width: 100%; 
+        height: auto; 
+    }
+
+    #imagen{
+        display: none;
+    }
+    
+    .botonCopiar{
+        width: 75%;
+    }
 }
 
-@media (max-width: 375px)  {
-    
-    .botonEncripDesencrip{
-        flex-direction: column;
+@media (max-width: 768px) {
+    .presentacion {
+        flex-direction: column; 
+        padding: 5%;
+    }
+
+    .presentacionContenido {
+        width: 100%; 
+    }
+
+    .textoIngresado {
+        width: 100%; 
+        height: 200px; 
+        font-size: 30px; 
+    }
+
+    .resultado {
+        width: 80%; 
+        height: auto; 
+    }
+
+    .botonCopiar, .diseñoBotones1, .diseñoBotones2 {
+        padding: 15px; 
+        width: 60%; 
+    }
+
+   
+}
+
+@media (max-width: 480px) {
+    .textoIngresado {
+        font-size: 25px; 
+    }
+
+    .botonCopiar, .diseñoBotones1, .diseñoBotones2 {
+        font-size: 1em; 
+    }
+
+    .cajaMuneco{
+        display: none;
     }
 
 }
